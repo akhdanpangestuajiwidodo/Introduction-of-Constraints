@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return Center(
       child: Container(
           color: Colors.red,
+           padding: EdgeInsets.all(9.0),
            child: Container(
              color: Colors.green,
              width: 10,
