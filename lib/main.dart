@@ -10,12 +10,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return UnconstrainedBox(
-      child: Container(
-        color: Colors.red,
-        width: 10000,
-        height: 20,
-      ),
+    return Row(
+      children: [
+        Expanded(
+          child: Container(
+            color: Colors.red,
+            child: Text('Hello! This is a very long Text!'),
+          ),
+        ),
+        Container(
+          color: Colors.green,
+          child: Text('Goodbye!'),
+        ),
+      ],
     );
   }
 }
