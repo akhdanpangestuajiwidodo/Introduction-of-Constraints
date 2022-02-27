@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Align(
+      alignment: Alignment(-1, 1),
       child: Container(
           color: Colors.red,
             width: 100,
