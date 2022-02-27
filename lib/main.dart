@@ -10,17 +10,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: ConstrainedBox(
-        constraints: BoxConstraints(
-          maxHeight: 200,
-          maxWidth: 200,
-          minHeight: 40,
-          minWidth: 10,
-        ),
-        child: Container(
-          color: Colors.red,
-        ),
+    return UnconstrainedBox(
+      child: Container(
+        color: Colors.red,
+        width: 10000,
+        height: 20,
       ),
     );
   }
